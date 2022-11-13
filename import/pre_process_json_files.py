@@ -3,9 +3,7 @@ import glob
 import re
 
 def underscored_key(match):
-    new_key = str.replace(f'"{match.group(1)}" :','-','_')
-#    print(new_key)
-    return new_key
+    return str.replace(f'"{match.group(1)}" :','-','_')
 
 read_files = glob.glob("C:\\Users\\DevangShah\\Documents\\DE_test_data_sets\\policies\\Row*.json")
 
