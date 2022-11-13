@@ -274,9 +274,9 @@
             "type": "STRING"
           },
           {
-            "mode": "REPEATED",
+            "mode": "NULLABLE",
             "name": "optional_coverages",
-            "type": "STRING"
+            "type": "JSON"
           },
           {
             "mode": "NULLABLE",
@@ -526,7 +526,7 @@
       {
         "mode": "NULLABLE",
         "name": "ref",
-        "type": "INTEGER"
+        "type": "STRING"
       },
       {
         "mode": "NULLABLE",
@@ -842,9 +842,9 @@
                 "type": "STRING"
               },
               {
-                "mode": "REPEATED",
+                "mode": "NULLABLE",
                 "name": "optional_coverages",
-                "type": "STRING"
+                "type": "JSON"
               },
               {
                 "mode": "NULLABLE",
