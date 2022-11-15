@@ -1,0 +1,1245 @@
+[
+      {
+        "mode": "NULLABLE",
+        "name": "refreshed_at",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "schema",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "tariff",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "renewal_count",
+        "type": "INTEGER"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "quote_uuid",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "status",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "owner",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "cap_and_collar",
+                        "type": "BOOLEAN"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "cancellation_fee",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "rules",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "rating",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "supporting_evidence_required",
+                        "type": "BOOLEAN"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "multi_policy_discount",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "multi_pet_discount",
+                        "type": "FLOAT"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "mta_max_future_date_days",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "contract_duration_days_or_months",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "rules",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "index_sum_assured",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "exclusion",
+                        "type": "BOOLEAN"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "flexible_contract_duration",
+                        "type": "BOOLEAN"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "endorsement_notes",
+                        "type": "BOOLEAN"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "features",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "product",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "product_discontinued",
+                        "type": "BOOLEAN"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "rules",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "auto_renew",
+                        "type": "BOOLEAN"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "features",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "renewals",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "notice_autocancel",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "rules",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "pro_rata_cancel_refund",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "features",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "cancellation",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "rules",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "discount_percentage",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "discount_amount",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "amount",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "monthly1",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "discount_percentage",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "discount_amount",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "amount",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "monthly",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "discount_percentage",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "discount_amount",
+                    "type": "INTEGER"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "amount",
+                    "type": "INTEGER"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "annual",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "price",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "headline",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "optional_coverages",
+            "type": "JSON"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "policy_details_summary",
+            "type": "JSON"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "variation",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "pricing_key",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "section",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "policy_details_text",
+                "type": "JSON"
+              },              {
+                "mode": "NULLABLE",
+                "name": "optional",
+                "type": "BOOLEAN"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_percentage",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_amount",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "monthly1",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_percentage",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_amount",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "monthly",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_percentage",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_amount",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "annual",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "price",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "mandatory_under_9",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "copayment_under_9_percent",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "mandatory",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "excesses",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "help",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "per_year_complementary",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "per_year",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "per_incident",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "allowances",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "coverages",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "products",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "created_at",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "inception_date",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "uuid",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "productline_key",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "productline",
+        "type": "FLOAT"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "cessation_date",
+        "type": "TIMESTAMP"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "mta",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "ref",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "updated_at",
+        "type": "TIMESTAMP"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "voluntary_excess",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "payment_type",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "invalid_card_details",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "variation",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "fixed_excess",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "cessation_date",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "inception_date",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "caseworker",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "option",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "addons",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "policy",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "sales_channel",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "cap_and_collar",
+                            "type": "BOOLEAN"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "cancellation_fee",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "rules",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "rating",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "supporting_evidence_required",
+                            "type": "BOOLEAN"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "multi_policy_discount",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "multi_pet_discount",
+                            "type": "FLOAT"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "mta_max_future_date_days",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "contract_duration_days_or_months",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "rules",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "index_sum_assured",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "exclusion",
+                            "type": "BOOLEAN"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "flexible_contract_duration",
+                            "type": "BOOLEAN"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "endorsement_notes",
+                            "type": "BOOLEAN"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "features",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "product",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "product_discontinued",
+                            "type": "BOOLEAN"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "rules",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "auto_renew",
+                            "type": "BOOLEAN"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "features",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "renewals",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "notice_autocancel",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "rules",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "pro_rata_cancel_refund",
+                            "type": "STRING"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "features",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "cancellation",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "rules",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_percentage",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_amount",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "monthly1",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_percentage",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_amount",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "monthly",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_percentage",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "discount_amount",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "amount",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "annual",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "price",
+                "type": "RECORD"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "headline",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "optional_coverages",
+                "type": "JSON"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "policy_details_summary",
+                "type": "JSON"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "pricing_key",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "section",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "policy_details_text",
+                    "type": "JSON"
+                  },                  {
+                    "mode": "NULLABLE",
+                    "name": "optional",
+                    "type": "BOOLEAN"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "discount_percentage",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "discount_amount",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "amount",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "monthly1",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "discount_percentage",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "discount_amount",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "amount",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "monthly",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "discount_percentage",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "discount_amount",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "amount",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "annual",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "price",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "amount",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "mandatory_under_9",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "amount",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "copayment_under_9_percent",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "amount",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "mandatory",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "excesses",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "help",
+                            "type": "STRING"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "amount",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "per_year_complementary",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "amount",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "per_year",
+                        "type": "RECORD"
+                      },
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "amount",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "per_incident",
+                        "type": "RECORD"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "allowances",
+                    "type": "RECORD"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "coverages",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "product_variation",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "value",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "uuid",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "species",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "ref",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "microchipped",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "photo",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "dob",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "pet_name",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "pedigree_type",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "pedigree",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "pet_address_postcode",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "gender",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "healthy",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "breed_friendly",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "spayed_neutered",
+                "type": "BOOLEAN"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "breed",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "insured_entities",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "data",
+        "type": "RECORD"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "history",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "locked",
+        "type": "BOOLEAN"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "account_ref",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "notes",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "policy_history_uuid",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "quote_uuid",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "productline_key",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "user_uuid",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "policy_uuid",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "premium",
+                "type": "INTEGER"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "inception_date",
+                "type": "TIMESTAMP"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "agency_ref",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "cessation_date",
+                "type": "TIMESTAMP"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "data",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "event_key",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "updated_at",
+            "type": "TIMESTAMP"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "created_at",
+            "type": "TIMESTAMP"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "timeline",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "_id",
+        "type": "STRING"
+      }
+]
