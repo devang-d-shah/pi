@@ -6,7 +6,7 @@ import re
 def underscored_key(match):
     return str.replace(f'"{match.group(1)}" :','-','_')
 
-# This would normally be bassed as a parameter
+# This would normally be passed as a parameter
 read_files = glob.glob("C:\\Users\\DevangShah\\Documents\\DE_test_data_sets\\policies\\Row*.json")
 
 # single newline delimited json output file with combined policisies from all input files, to make it possible to import into BQ 
